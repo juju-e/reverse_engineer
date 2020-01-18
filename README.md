@@ -31,10 +31,10 @@ The little trick here was just that we had to give command line arguments and ev
 This one really trolled me, it litterally trolled the hell out of me, if i count the number of possible passwords it would amount to 3 or 4, first let's use `strings`:   <br><br>
 ![](/img/img6.png)  <br>
 Easy peasy right??:  <br>
-![](/img/imgt.png)   <br>
+![](/img/imgr.png)   <br>
 Whut?? why didn't it work,hmm... let's try another method, on this one i'll use GDB and follow the steps shown in the 2 below screenshots:  <br>
 ![](/img/img8.png) <br>
-![](/img/imgr.png) <br>
+![](/img/imgt.png) <br>
 Yeah!!!, found it on memcmp breakpoint now let's try it: <br>
 ![](/img/img10.png)   <br>
 Wrong again??? I had to give up my pride and ask for help in the fedora codein telegram group and a user told me to try out Ghidra, which i immediately installed and tried out, if you know what i'm talking about you don't need a writeup on how to install or do basic stuff with it, I then used ghidra to analyze the file, i got an output like this one:
