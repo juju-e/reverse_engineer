@@ -34,24 +34,24 @@ Easy peasy right??:  <br>
 ![](/img/imgr.png)   <br>
 Whut?? why didn't it work,hmm... let's try another method, on this one i'll use GDB and follow the steps shown in the 2 below screenshots:  <br>
 ![](/img/img8.png) <br>
-![](/img/imgt.png) <br>
+![](/img/img10.png) <br>
 Yeah!!!, found it on memcmp breakpoint now let's try it: <br>
-![](/img/img10.png)   <br>
+![](/img/imgt.png)   <br>
 Wrong again??? I had to give up my pride and ask for help in the fedora codein telegram group and a user told me to try out Ghidra, which i immediately installed and tried out, if you know what i'm talking about you don't need a writeup on how to install or do basic stuff with it, I then used ghidra to analyze the file, i got an output like this one:
 ![](/img/img11.png)
 After hours of googling i found a pretty funny thing to exploit the program, when i give memcmp a very large data as input, it will return each time 0,
 I tried it and then:
-![](/img/img12png)
+![](/img/img12.png)
 > Password= `any large input to overflow the stack`
 ### Conclusion
 Reverse engeneering the 1st and second crackme was pretty easy when using some basic linux tools. 
 So, for the 3rdcrackme i know i should have extacted the password but the thing was to exploit it so the overflow can be considered as a valid password because when given as input it grants you access to the program
-When i was disassembling the 3rdcrackme i found out there was a secret function but with my current knowledge of assembly i could not find a way to exploit it, just can you please tell me what it is after the contest ends??
+When i was disassembling the 3rdcrackme i found out there was a secret function but with my current knowledge of assembly i could not find a way to exploit it, just can you please tell me what it is after the contest ends??<br>
 a little list of false passwords i found on 3rdcrackme: 00g61@k001and1514cel,FEDORAPASSWORDGCI,00g61@k0H,0land151H,4celf 
 ### References:
 I used these video from live overflow as a reference when i was doing the task:
-[1](https://www.youtube.com/watch?v=VroEiMOJPm8&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=7&t=0s)
-[2](https://www.youtube.com/watch?v=3NTXFUxcKPc&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=8&t=0s)
+[1](https://www.youtube.com/watch?v=VroEiMOJPm8&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=7&t=0s)<br>
+[2](https://www.youtube.com/watch?v=3NTXFUxcKPc&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=8&t=0s)<br>
 > Password= `any large input to overflow the stack`
 
 Checkout [this](https://asciinema.org/a/aUS6D9Mlq6dbGvpTLC7n1gb1l) asciinema if you want to see the execution of these exploits.
