@@ -44,12 +44,13 @@ I tried it and then:
 ![](/img/img12.png)
 > Password= `any large input to overflow the stack`
 ### Conclusion
-Reverse engeneering the 1st and second crackme was pretty easy when using some basic linux tools. 
-So, for the 3rdcrackme i know i should have extacted the password but the thing was to exploit it so the overflow can be considered as a valid password because when given as input it grants you access to the program
+Reverse engeneering the 1st and second crackme was pretty easy when using some basic linux tools. <br>
+So, for the 3rdcrackme i know i should have extracted the password but what i did was just to overflow it, <then it can be considered as a valid password because when given as input it grants you access to the program
 When i was disassembling the 3rdcrackme i found out there was a secret function but with my current knowledge of assembly i could not find a way to exploit it, just can you please tell me what it is after the contest ends??<br>
-a little list of false passwords i found on 3rdcrackme: 00g61@k001and1514cel,FEDORAPASSWORDGCI,00g61@k0H,0land151H,4celf 
+Here is a little list of false passwords i found on 3rdcrackme:
+00g61@k001and1514cel,FEDORAPASSWORDGCI,00g61@k0H,0land151H,4celf 
 ### References:
-I used these video from live overflow as a reference when i was doing the task:
+I used these video from live overflow as a reference when i was doing the task:<br>
 [1](https://www.youtube.com/watch?v=VroEiMOJPm8&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=7&t=0s)<br>
 [2](https://www.youtube.com/watch?v=3NTXFUxcKPc&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=8&t=0s)<br>
 > Password= `any large input to overflow the stack`
