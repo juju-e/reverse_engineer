@@ -54,5 +54,7 @@ I used these video from live overflow as a reference when i was doing the task:
 [2](https://www.youtube.com/watch?v=3NTXFUxcKPc&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN&index=8&t=0s)
 > Password= `any large input to overflow the stack`
 
+Checkout [this](https://asciinema.org/a/aUS6D9Mlq6dbGvpTLC7n1gb1l) asciinema if you want to see the execution of these exploits.
+
 
 Made by `Shadowblade` During `GCI 2019`, Open source project
